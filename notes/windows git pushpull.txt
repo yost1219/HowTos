@@ -1,0 +1,160 @@
+Microsoft Windows [Version 10.0.17134.137]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Student>cd ..
+
+C:\Users>cd ..
+
+C:\>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 10BE-4EAE
+
+ Directory of C:\
+
+07/02/2018  03:52 PM    <DIR>          boot
+05/08/2017  03:42 PM    <DIR>          cygwin64
+06/08/2016  09:28 AM    <DIR>          Dell
+06/08/2016  09:37 AM    <DIR>          drvrtmp
+01/10/2018  03:18 PM    <DIR>          Intel
+02/09/2018  11:41 AM    <DIR>          Logs
+05/08/2017  03:29 PM    <DIR>          MinGW
+06/05/2017  09:55 AM    <DIR>          New folder
+04/11/2018  06:38 PM    <DIR>          PerfLogs
+07/05/2018  05:17 PM    <DIR>          Program Files
+07/05/2018  08:13 PM    <DIR>          Program Files (x86)
+04/03/2018  12:59 PM    <DIR>          Python27
+07/02/2018  03:52 PM           622,520 Reflect_Install.log
+06/08/2016  10:21 AM    <DIR>          Symbols
+04/18/2017  12:18 PM    <DIR>          SymCache
+07/05/2018  05:18 PM    <DIR>          Temp
+07/05/2018  05:18 PM    <DIR>          Users
+07/05/2018  05:24 PM    <DIR>          Windows
+07/05/2018  05:24 PM    <DIR>          Windows.old
+               1 File(s)        622,520 bytes
+              18 Dir(s)  279,263,064,064 bytes free
+
+C:\>cd Users
+
+C:\Users>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 10BE-4EAE
+
+ Directory of C:\Users
+
+07/05/2018  05:18 PM    <DIR>          .
+07/05/2018  05:18 PM    <DIR>          ..
+07/05/2018  05:24 PM    <DIR>          Curriculum Dev
+01/10/2018  03:18 PM    <DIR>          Default.migrated
+07/05/2018  08:13 PM    <DIR>          Public
+07/09/2018  01:34 PM    <DIR>          Student
+               0 File(s)              0 bytes
+               6 Dir(s)  279,263,096,832 bytes free
+
+C:\Users>cd Student
+
+C:\Users\Student>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 10BE-4EAE
+
+ Directory of C:\Users\Student
+
+07/09/2018  01:34 PM    <DIR>          .
+07/09/2018  01:34 PM    <DIR>          ..
+07/10/2018  08:04 AM               756 .bash_history
+07/09/2018  10:03 AM                60 .gitconfig
+07/09/2018  11:05 AM             1,019 .viminfo
+07/05/2018  02:56 PM    <DIR>          .vscode
+07/05/2018  05:24 PM    <DIR>          3D Objects
+07/05/2018  02:42 PM    <DIR>          ansel
+07/05/2018  05:24 PM    <DIR>          Contacts
+07/10/2018  11:30 AM    <DIR>          Desktop
+07/09/2018  10:27 AM    <DIR>          Documents
+07/11/2018  07:37 AM    <DIR>          Downloads
+07/05/2018  05:24 PM    <DIR>          Favorites
+07/05/2018  05:24 PM    <DIR>          Links
+07/05/2018  05:24 PM    <DIR>          Music
+07/05/2018  02:43 PM    <DIR>          OneDrive
+07/05/2018  05:24 PM    <DIR>          Pictures
+03/07/2017  12:00 PM    <DIR>          Roaming
+07/05/2018  05:24 PM    <DIR>          Saved Games
+07/05/2018  05:24 PM    <DIR>          Searches
+07/11/2018  07:37 AM    <DIR>          Videos
+               3 File(s)          1,835 bytes
+              18 Dir(s)  279,263,031,296 bytes free
+
+C:\Users\Student>cd Desktop
+
+C:\Users\Student\Desktop>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 10BE-4EAE
+
+ Directory of C:\Users\Student\Desktop
+
+07/10/2018  11:30 AM    <DIR>          .
+07/10/2018  11:30 AM    <DIR>          ..
+07/10/2018  07:27 AM           268,216 git-cheatsheet-EN-dark.pdf
+07/09/2018  11:01 AM    <DIR>          gitHubUploads
+07/05/2018  05:25 PM             1,417 Microsoft Edge.lnk
+07/05/2018  02:54 PM             2,260 Slack.lnk
+07/05/2018  02:52 PM             1,539 sublime_text - Shortcut.lnk
+07/10/2018  11:30 AM           161,903 voucher.pdf
+               5 File(s)        435,335 bytes
+               3 Dir(s)  279,263,064,064 bytes free
+
+C:\Users\Student\Desktop>cd gitHubUploads
+
+C:\Users\Student\Desktop\gitHubUploads>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\Student\Desktop\gitHubUploads>git fetch --all
+Fetching origin
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 20 (delta 6), reused 20 (delta 6), pack-reused 0
+Unpacking objects: 100% (20/20), done.
+From https://github.com/yost1219/CprogrammingTEST
+   7fd496a..d8e3247  master     -> origin/master
+
+C:\Users\Student\Desktop\gitHubUploads>git pull origin master
+From https://github.com/yost1219/CprogrammingTEST
+ * branch            master     -> FETCH_HEAD
+Updating 7fd496a..d8e3247
+Fast-forward
+ DemoLabs/DemoLab1-1-2.c |  19 +++++++++++++++++++
+ DemoLabs/DemoLab1-1.c   |  18 ++++++++++++++++++
+ DemoLabs/DemoLab1-3-2.c |  18 ++++++++++++++++++
+ DemoLabs/DemoLab1-3.c   |  13 +++++++++++++
+ DemoLabs/DemoLab2-1-1.c |  25 +++++++++++++++++++++++++
+ DemoLabs/DemoLab2-1.c   |  46 ++++++++++++++++++++++++++++++++++++++++++++++
+ DemoLabs/a.out          | Bin 0 -> 8224 bytes
+ HowTos/arrays.c         |  22 ++++++++++++++++++++++
+ HowTos/declaration.c    |  22 ++++++++++++++++++++++
+ HowTos/for_loop.c       |  31 +++++++++++++++++++++++++++++++
+ HowTos/initialization.c |  25 +++++++++++++++++++++++++
+ PerfLabs/Lab2A.c        |  21 +++++++++++++++++++++
+ PerfLabs/Lab2B.c        |  18 ++++++++++++++++++
+ PerfLabs/Lab3A.c        |  29 +++++++++++++++++++++++++++++
+ PerfLabs/a.out          | Bin 0 -> 8216 bytes
+ PerfLabs/rando.c        |  31 +++++++++++++++++++++++++++++++
+ 16 files changed, 338 insertions(+)
+ create mode 100644 DemoLabs/DemoLab1-1-2.c
+ create mode 100644 DemoLabs/DemoLab1-1.c
+ create mode 100644 DemoLabs/DemoLab1-3-2.c
+ create mode 100644 DemoLabs/DemoLab1-3.c
+ create mode 100644 DemoLabs/DemoLab2-1-1.c
+ create mode 100644 DemoLabs/DemoLab2-1.c
+ create mode 100755 DemoLabs/a.out
+ create mode 100644 HowTos/arrays.c
+ create mode 100644 HowTos/declaration.c
+ create mode 100644 HowTos/for_loop.c
+ create mode 100644 HowTos/initialization.c
+ create mode 100644 PerfLabs/Lab2A.c
+ create mode 100644 PerfLabs/Lab2B.c
+ create mode 100644 PerfLabs/Lab3A.c
+ create mode 100755 PerfLabs/a.out
+ create mode 100644 PerfLabs/rando.c
+
+C:\Users\Student\Desktop\gitHubUploads>

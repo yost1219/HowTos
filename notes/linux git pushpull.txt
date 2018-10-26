@@ -1,0 +1,133 @@
+[student@localhost ~]$ ls
+Class    Documents  Music     Public     Videos
+Desktop  Downloads  Pictures  Templates
+[student@localhost ~]$ cd Desktop/
+[student@localhost Desktop]$ ls
+[student@localhost Desktop]$ cd ..
+[student@localhost ~]$ cd Class/
+[student@localhost Class]$ ls
+ClassRepos  MyRepos
+[student@localhost Class]$ cd MyRepos/
+[student@localhost MyRepos]$ ls
+DemoLabs  HowTos  PerfLabs
+[student@localhost MyRepos]$ git clone https://github.com/yost1219/CprogrammingTEST.git
+Cloning into 'CprogrammingTEST'...
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 7 (delta 0), reused 4 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+[student@localhost MyRepos]$ git status
+fatal: not a git repository (or any of the parent directories): .git
+[student@localhost MyRepos]$ ls
+CprogrammingTEST  DemoLabs  HowTos  PerfLabs
+[student@localhost MyRepos]$ cd CprogrammingTEST/
+[student@localhost CprogrammingTEST]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+[student@localhost CprogrammingTEST]$ cd ..
+[student@localhost MyRepos]$ mv DemoLabs CprogrammingTEST/
+[student@localhost MyRepos]$ ls
+CprogrammingTEST  HowTos  PerfLabs
+[student@localhost MyRepos]$ mv HowTos/ CprogrammingTEST/
+[student@localhost MyRepos]$ ls
+CprogrammingTEST  PerfLabs
+[student@localhost MyRepos]$ mv PerfLabs/ CprogrammingTEST/
+[student@localhost MyRepos]$ ls
+CprogrammingTEST
+[student@localhost MyRepos]$ cd C
+bash: cd: C: No such file or directory
+[student@localhost MyRepos]$ cd CprogrammingTEST/
+[student@localhost CprogrammingTEST]$ ls
+DemoLabs  HowTos  PerfLabs  README.md  READMEnotes.md
+[student@localhost CprogrammingTEST]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	DemoLabs/
+	HowTos/
+	PerfLabs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+[student@localhost CprogrammingTEST]$ git add .
+[student@localhost CprogrammingTEST]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   DemoLabs/DemoLab1-1-2.c
+	new file:   DemoLabs/DemoLab1-1.c
+	new file:   DemoLabs/DemoLab1-3-2.c
+	new file:   DemoLabs/DemoLab1-3.c
+	new file:   DemoLabs/DemoLab2-1-1.c
+	new file:   DemoLabs/DemoLab2-1.c
+	new file:   DemoLabs/a.out
+	new file:   HowTos/arrays.c
+	new file:   HowTos/declaration.c
+	new file:   HowTos/for_loop.c
+	new file:   HowTos/initialization.c
+	new file:   PerfLabs/Lab2A.c
+	new file:   PerfLabs/Lab2B.c
+	new file:   PerfLabs/Lab3A.c
+	new file:   PerfLabs/a.out
+	new file:   PerfLabs/rando.c
+
+[student@localhost CprogrammingTEST]$ git commit
+[master d8e3247] Added DemoLabs, HowTos, and PerfLabs folders with all associated files.
+ Committer: student <student@localhost.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 16 files changed, 338 insertions(+)
+ create mode 100644 DemoLabs/DemoLab1-1-2.c
+ create mode 100644 DemoLabs/DemoLab1-1.c
+ create mode 100644 DemoLabs/DemoLab1-3-2.c
+ create mode 100644 DemoLabs/DemoLab1-3.c
+ create mode 100644 DemoLabs/DemoLab2-1-1.c
+ create mode 100644 DemoLabs/DemoLab2-1.c
+ create mode 100755 DemoLabs/a.out
+ create mode 100644 HowTos/arrays.c
+ create mode 100644 HowTos/declaration.c
+ create mode 100644 HowTos/for_loop.c
+ create mode 100644 HowTos/initialization.c
+ create mode 100644 PerfLabs/Lab2A.c
+ create mode 100644 PerfLabs/Lab2B.c
+ create mode 100644 PerfLabs/Lab3A.c
+ create mode 100755 PerfLabs/a.out
+ create mode 100644 PerfLabs/rando.c
+[student@localhost CprogrammingTEST]$ git push origin master
+Username for 'https://github.com': yost1219
+Password for 'https://yost1219@github.com': 
+Counting objects: 20, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 7.44 KiB | 2.48 MiB/s, done.
+Total 20 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/yost1219/CprogrammingTEST.git
+   7fd496a..d8e3247  master -> master
+[student@localhost CprogrammingTEST]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+[student@localhost CprogrammingTEST]$ git pull origin master
+From https://github.com/yost1219/CprogrammingTEST
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+[student@localhost CprogrammingTEST]$

@@ -1,0 +1,39 @@
+[student@localhost ~]$ ls
+Class    Documents  Music     Public     Videos
+Desktop  Downloads  Pictures  Templates
+[student@localhost ~]$ cd Class/
+[student@localhost Class]$ ls
+ClassRepos  MyRepos
+[student@localhost Class]$ cd ClassRepos/
+[student@localhost ClassRepos]$ ls
+IQT-C-Programming
+[student@localhost ClassRepos]$ cd IQT-C-Programming/
+[student@localhost IQT-C-Programming]$ ls
+assets                      ch06_bitwise_operators  ch13_memory
+ch00_first_day              ch07_control_flow       ch14_structs
+ch01_introduction           ch08_functions          ch15_error_handling
+ch02_variables              ch09_c_compiler         exercises
+ch03_arrays_strings         ch10_preprocessor       README.md
+ch04_print_scan             ch11_Pointers_Arrays
+ch05_operators_expressions  ch12_fileio
+[student@localhost IQT-C-Programming]$ git pull origin master
+remote: Counting objects: 13, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 13 (delta 11), reused 13 (delta 11), pack-reused 0
+Unpacking objects: 100% (13/13), done.
+From https://github.com/CyberTrainingUSAF/IQT-C-Programming
+ * branch            master     -> FETCH_HEAD
+   8c789c1..7ce5fd7  master     -> origin/master
+Updating 8c789c1..7ce5fd7
+Fast-forward
+ ch04_print_scan/4.1_c-streams.md                   | 10 ++++----
+ ch04_print_scan/4.2_functions.md                   |  2 +-
+ ch04_print_scan/4.3_getchar-putchar.md             | 12 ++++-----
+ ch04_print_scan/4.4_getc-putc.md                   | 12 ++++-----
+ ch04_print_scan/4.5_string-io.md                   | 30 +++++++++++-----------
+ ch04_print_scan/4.6_printf.md                      | 14 +++++-----
+ ch04_print_scan/4.7_scanf.md                       |  8 +++---
+ ch04_print_scan/4.8_fprintf-fscanf.md              | 18 ++++++-------
+ .../5.2_arithmetic-operators.md                    |  2 +-
+ 9 files changed, 54 insertions(+), 54 deletions(-)
+[student@localhost IQT-C-Programming]$ 
